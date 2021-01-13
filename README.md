@@ -1,6 +1,6 @@
 ## Recreating [bewakoof.com](https://www.bewakoof.com/) with cool new UI
 
-React-js, styled-components, Material-ui and Bootstrap is used to build the UI and Firebase is used as backend and database.
+React-js, styled-components, Material-ui and Bootstrap is used to build the UI, Used Context API to share the data across components and Firebase is used as backend and database.
 
 
 
