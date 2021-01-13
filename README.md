@@ -8,10 +8,10 @@ Firebase is used for Backend, Database and Hosting.
 
 ### Features are available 
 
-1.User Sign-up and Login authentication.
-2.Responsive design.
-3.Browse by products category.
-4.Cart functionality and more.
+1. User Sign-up and Login authentication.
+2. Responsive design.
+3. Browse by products category.
+4. Cart functionality and more.
 
 
 ### Features are coming
