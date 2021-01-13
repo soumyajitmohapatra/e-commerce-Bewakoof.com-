@@ -1,7 +1,7 @@
 ## Recreating [bewakoof.com](https://www.bewakoof.com/) with cool new UI
 
 This SPA is build using >>>>>>>>
-For UI React-JS, Styled-Components, Material-ui and Bootstrap,
+For UI (React-JS, Styled-Components, Material-ui and Bootstrap),
 Used Context API to share the data across components,
 Firebase is used for Backend, Database and Hosting.
 
