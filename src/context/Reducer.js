@@ -16,9 +16,11 @@ const reducer = (state, action) => {
         ...state,
         wishlist: [...state.wishlist, action.item],
       };
-      
+
     case "REMOVE_FROM_WISHLIST":
-      const indexWish = state.wishlist.findIndex((wishlistItem) => wishlistItem.id === action.id);
+      const indexWish = state.wishlist.findIndex(
+        (wishlistItem) => wishlistItem.id === action.id
+      );
       let newwishlist = [...state.wishlist];
       if (indexWish >= 0) {
         newwishlist.splice(indexWish, 1);
@@ -39,6 +41,7 @@ const reducer = (state, action) => {
         ...state,
         bag: [...state.bag, action.item],
       };
+
     case "REMOVE_FROM_BAG":
       const index = state.bag.findIndex((bagItem) => bagItem.id === action.id);
       let newbag = [...state.bag];

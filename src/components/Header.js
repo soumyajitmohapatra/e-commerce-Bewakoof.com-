@@ -57,26 +57,7 @@ const Styles = styled.div`
     font-size: 15px;
     font-weight: bold;
   }
-  /* .navbar-brand {
-    @media (min-device-width: 320px) and (max-device-width: 480px) {
-      position: relative;
-      right: 1.9rem;
-    }
-    @media (min-device-width: 600px) and (max-device-width: 990px) {
-      position: relative;
-      right: 7rem;
-    }
-  }
-  .navbar-toggler {
-    @media (min-device-width: 320px) and (max-device-width: 480px) {
-      position: relative;
-      left: 1.5rem;
-    }
-    @media (min-device-width: 600px) and (max-device-width: 990px) {
-      position: relative;
-      left: 6.5rem;
-    }
-  } */
+
   .form-inline {
     @media (max-device-width: 990px) {
       padding-left: 0;

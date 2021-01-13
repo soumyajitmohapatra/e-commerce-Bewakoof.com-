@@ -6,7 +6,7 @@ import { useStateValue } from "../../context/State";
 import { DeleteForever, LocalMall, Star } from "@material-ui/icons";
 
 function CARD({ id, pName, image, rating, price, originalPrice }) {
-  const [{ wishlist, bag }, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   const addToBag = () => {
     dispatch({

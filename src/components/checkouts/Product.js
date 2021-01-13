@@ -14,9 +14,9 @@ import {
 } from "@material-ui/core";
 
 function Product({ id, pName, image, price, originalPrice, rating }) {
-  const [{ wishlist, bag }, dispatch] = useStateValue();
+  const [{  }, dispatch] = useStateValue();
   const [open, setOpen] = React.useState(false);
-  
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -95,23 +95,29 @@ function Product({ id, pName, image, price, originalPrice, rating }) {
           aria-describedby="alert-dialog-description"
         >
           <DialogTitle id="alert-dialog-title">
-            <div style={{ color: "#181818", fontWeight: "bolder" }}>
-              Remove Item
-            </div>
+            <h6 style={{ color: "#181818", fontWeight: "bolder" }}>
+              REMOVE ITEM
+            </h6>
           </DialogTitle>
+          <Line></Line>
+
           <DialogContent>
             <DialogContentText id="alert-dialog-description">
-              <p style={{ fontSize: "12px", fontWeight: "600" }}>
-                Are you sure you want to remove this item?
+              <p style={{ fontSize: "13px", fontWeight: "600",color: "#181818" }}>
+                Are you sure you want to remove this item ?
               </p>
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button style={{ fontWeight: "500" }} onClick={addToWishlist}>
-              <span onClick={handleClose}>Add to Wishlist</span>
+            <Button onClick={addToWishlist}>
+              <span style={{ fontWeight: "600" }} onClick={handleClose}>
+                Add to Wishlist
+              </span>
             </Button>
-            <Button style={{ fontWeight: "500" }} onClick={removeItem}>
-              <span onClick={handleClose}>Delete</span>
+            <Button onClick={removeItem}>
+              <span style={{ fontWeight: "600" }} onClick={handleClose}>
+                Delete
+              </span>
             </Button>
           </DialogActions>
         </Dialog>
@@ -122,12 +128,22 @@ function Product({ id, pName, image, price, originalPrice, rating }) {
 
 export default Product;
 
+const Line = styled.div`
+  height: 2px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 6px;
+`;
+
 const PRODUCT = styled.div`
   width: 100%;
   max-height: 100%;
   display: flex;
   margin-top: 1rem;
   flex: 1;
+  .MuiDialogTitle-root {
+    padding: 16px 25px 5px 25px;
+  }
 `;
 const Delete = styled.button`
   background: transparent;

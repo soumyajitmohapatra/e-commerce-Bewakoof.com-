@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import styled from "styled-components";
 import { Card } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,7 +12,6 @@ import MobileCovers from "./components/productComponents/MobileCovers";
 import AllClothing from "./components/productComponents/AllClothing";
 
 import Checkout from "./components/checkouts/Checkout";
-// import ProductInfo from "./components/checkouts/ProductInfo";
 import Login from "./components/subHeader/Login";
 import Signup from "./components/subHeader/Signup";
 import { auth } from "./firebase";
@@ -19,7 +19,7 @@ import { useStateValue } from "./context/State";
 import Wishlist from "./components/checkouts/Wishlist";
 
 function App() {
-  const [{ product }, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -48,7 +48,9 @@ function App() {
         </Route>
         <>
           <Header />
-
+          <Toast>
+            <ToastContainer style={{ top: "4rem" }} autoClose={2000} />
+          </Toast>
           <div style={{ minHeight: "100vh" }}>
             <Switch>
               <Route exact path="/">
@@ -111,3 +113,22 @@ function App() {
 }
 
 export default App;
+
+const Toast = styled.div`
+  .Toastify__toast {
+    margin-bottom: 1rem;
+  }
+  .Toastify__close-button--default {
+    color: #fff;
+  }
+
+  .Toastify__toast-container {
+    @media (max-width: 990px) {
+      width: 15rem;
+    }
+  }
+  .Toastify__toast--default {
+    background: rgba(24, 24, 24, 0.8);
+    color: #fff;
+  }
+`;

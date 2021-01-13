@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   background: #ffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,10 +11,20 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
 
+
+
+/* 
+  #181818 black text
+  #FDB827 yellow header
+  #FD3A69 pink
+  #E5E5E5 white bg
+   */

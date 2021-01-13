@@ -194,7 +194,7 @@ export default Footer;
 // bg #181818
 
 const FOOTER = styled.div`
-  padding: 2% 12% 2% 11%;
+  padding: 4% 12% 2% 11%;
 
   background-color: #181818;
   color: #ffff;

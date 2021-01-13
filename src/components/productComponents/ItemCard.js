@@ -5,9 +5,19 @@ import { Card } from "react-bootstrap";
 import { useStateValue } from "../../context/State";
 import { Catalog } from "../../Spinner";
 import { Favorite, LocalMall, Star } from "@material-ui/icons";
+import { toast } from "react-toastify";
 
 function ItemCard({ id, pName, image, rating, price, originalPrice }) {
-  const [{ bag, wishlist }, dispatch] = useStateValue();
+  const [{  }, dispatch] = useStateValue();
+
+  const Msg = () => (
+    <>
+      <div style={{ display: "flex" }}>
+        <LocalMall fontSize="small" />
+        <h6 >&nbsp; Product added to Bag</h6>
+      </div>
+    </>
+  );
 
   const addToBag = () => {
     dispatch({
@@ -21,6 +31,7 @@ function ItemCard({ id, pName, image, rating, price, originalPrice }) {
         originalPrice: originalPrice,
       },
     });
+    toast(Msg);
   };
   const addToWishlist = () => {
     dispatch({
