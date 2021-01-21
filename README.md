@@ -6,7 +6,7 @@ Used Context API to share the data across components,
 Firebase is used for Backend, Database and Hosting.
 
 
-### Features are available 
+## Features are available 
 
 1. User Sign-up and Login authentication.
 2. Responsive design.
@@ -14,7 +14,7 @@ Firebase is used for Backend, Database and Hosting.
 4. Cart functionality and more.
 
 
-### Features are coming
+## Features are coming
 
 1. User verification
 2. Filter Product.
