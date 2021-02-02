@@ -16,6 +16,7 @@ import {
   Twitter,
   Pinterest,
   Apple,
+  History,
 } from "@material-ui/icons";
 
 function Footer() {
@@ -24,7 +25,7 @@ function Footer() {
       <FOOTER>
         <section>
           <Credit>
-            <h5>Made with passion by :  </h5>
+            <h5>Made with passion by : </h5>
             <a
               target="_blank"
               rel="noreferrer"
@@ -85,12 +86,15 @@ function Footer() {
                   </Link>
                 </Ul>
                 <Ul>
+                &nbsp;
                   <Link to="/coming-soon">
                     <Twitter />
                   </Link>
+                  &nbsp;
                   <Link to="/coming-soon">
                     <Pinterest />
                   </Link>
+                  &nbsp;
                   <Link to="/coming-soon">
                     <Apple />
                   </Link>
@@ -123,18 +127,16 @@ function Footer() {
               <ListGroup>
                 <Ul>
                   <small>
-                    <i className="fa fa-repeat" aria-hidden="true"></i>
+                    <History fontSize="small"/>
                   </small>
                   <Link style={{ paddingLeft: "5px" }} to="/coming-soon">
                     <big>15 Days Return Policy</big>
                   </Link>
                 </Ul>
-                <Ul>
-                  <small>
-                    <i className="fa fa-inr" aria-hidden="true"></i>
-                  </small>
+                <Ul style={{ display: "flex" }}>
+                  &nbsp;<h5>₹</h5>
                   <Link style={{ paddingLeft: "5px" }} to="/coming-soon">
-                    <big>Cash On Delivery</big>
+                  &nbsp; <big> Cash On Delivery</big>
                   </Link>
                 </Ul>
               </ListGroup>
@@ -202,7 +204,7 @@ const FOOTER = styled.div`
   a {
     margin: 0;
     padding: 0;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     vertical-align: baseline;
     background: transparent;

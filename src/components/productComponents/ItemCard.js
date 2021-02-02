@@ -8,7 +8,7 @@ import { Favorite, LocalMall, Star } from "@material-ui/icons";
 import { toast } from "react-toastify";
 
 function ItemCard({ id, pName, image, rating, price, originalPrice }) {
-  const [{  }, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   const Msg = () => (
     <>

@@ -1478,18 +1478,6 @@
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.4.1.tgz#600f2275ff54739ad5ac0102f1467b8963cd5f71"
   integrity sha512-0yPjzuzGMkW1GkrC8yWsiN7vt1OzkMIi9HgxRmKREZl2wnNPOKo/yScTjXf/O57HM8dltqxPF6jlNLFVtc2qdw==
 
-"@fortawesome/fontawesome-common-types@^0.2.32":
-  version "0.2.32"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.32.tgz#3436795d5684f22742989bfa08f46f50f516f259"
-  integrity sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w==
-
-"@fortawesome/fontawesome-svg-core@^1.2.32":
-  version "1.2.32"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.32.tgz#da092bfc7266aa274be8604de610d7115f9ba6cf"
-  integrity sha512-XjqyeLCsR/c/usUpdWcOdVtWFVjPbDFBTQkn2fQRrWhhUoxriQohO2RWDxLyUM8XpD+Zzg5xwJ8gqTYGDLeGaQ==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.32"
-
 "@google-cloud/paginator@^3.0.0":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@google-cloud/paginator/-/paginator-3.0.5.tgz#9d6b96c421a89bd560c1bc2c197c7611ef21db6c"

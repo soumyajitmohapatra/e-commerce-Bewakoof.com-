@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Fade, Zoom } from "react-reveal";
 import getData from "../Getdata";
 import { CardDeck, Container } from "react-bootstrap";
 
 // COMMPONENTS IMPORTS FROM SUBS
+import { ImageGrid } from "../Spinner";
 import Row0 from "./subHome/Row0";
 import Row1 from "./subHome/Row1";
 import Row2 from "./subHome/Row2";
@@ -16,10 +17,21 @@ import Row5 from "./subHome/Row5";
 const Home = () => {
   const { docs } = getData("browsetopwear");
   const { document } = getData("browsebottomwear");
-  
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    const timing = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+    return () => clearTimeout(timing);
+  }, []);
   return (
     <Container style={{ marginTop: "4rem" }}>
-      
+      {loading ? (
+        <ImageGrid />
+      ) : (
         <Styles>
           <Fade>
             <Row0 />
@@ -87,6 +99,7 @@ const Home = () => {
             <WhiteSpace></WhiteSpace>
           </Fade>
         </Styles>
+      )}
     </Container>
   );
 };

@@ -1,14 +1,8 @@
 import React from "react";
 import ContentLoader from "react-content-loader";
 
-export const MyLoader = (props) => (
-  <ContentLoader
-    speed={2}
-    width={340}
-    height={284}
-    viewBox="0 0 340 284"
-    {...props}
-  >
+export const MyLoader = () => (
+  <ContentLoader speed={2} width={340} height={284} viewBox="0 0 340 284">
     <rect x="0" y="8" rx="3" ry="3" width="98" height="24" />
     <rect x="0" y="50" rx="3" ry="3" width="78" height="12" />
     <rect x="0" y="90" rx="3" ry="3" width="98" height="8" />
@@ -23,8 +17,24 @@ export const MyLoader = (props) => (
   </ContentLoader>
 );
 
-export const Catalog = (props) => (
-  <ContentLoader viewBox="0 0 990 1050" height={900} width={1000} {...props}>
+export const ImageGrid = () => (
+  <ContentLoader
+    width={1090}
+    height={775}
+    viewBox="0 0 1090 775"
+    backgroundColor="#f3f3f3"
+    foregroundColor="#ecebeb"
+  >
+    <rect x="0" y="8" rx="2" ry="2" width="340" height="340" />
+    <rect x="387" y="8" rx="2" ry="2" width="340" height="340" />
+    <rect x="770" y="8" rx="2" ry="2" width="340" height="340" />
+    <rect x="0" y="380" rx="2" ry="2" width="1090" height="248" />
+    <rect x="0" y="648" rx="2" ry="2" width="1090" height="248" />
+
+  </ContentLoader>
+);
+export const Catalog = () => (
+  <ContentLoader viewBox="0 0 990 1050" height={900} width={1000}>
     <rect x="48" y="10" rx="8" ry="8" width="210" height="250" />
     <rect x="48" y="270" rx="0" ry="0" width="120" height="17" />
     <rect x="48" y="300" rx="0" ry="0" width="200" height="22" />
