@@ -4,7 +4,6 @@ import App from "./App";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
-import * as serviceWorker from './serviceWorker';
 import reducer, { initialState } from "./context/Reducer";
 import { State } from "./context/State";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,4 +21,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-serviceWorker.register();
