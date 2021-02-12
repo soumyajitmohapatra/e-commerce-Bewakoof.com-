@@ -1,22 +1,26 @@
-## Recreating [bewakoof.com](https://www.bewakoof.com/) with cool new UI
-
-This SPA is build using >>>>>>>>
-For UI (React-JS, Styled-Components, Material-ui and Bootstrap),
-Used Context API to share the data across components,
-Firebase is used for Backend, Database and Hosting.
-
-
-## Features are available 
-
-1. User Sign-up and Login authentication.
-2. Responsive design.
-3. Browse by products category.
-4. Cart functionality and more.
+![Firebase](https://miro.medium.com/max/300/1*SzrSsS1stZQ7ipYObndbAw.png)
+## [Single Page Application](https://ecommerce-24a88.web.app/), 🚀Built with [React](https://reactjs.org/) and [More](https://github.com/soumyajitmohapatra/ecommerce/blob/main/package.json#L5)
+[<img src="https://github.com/soumyajitmohapatra/ecommerce/blob/main/Assest/Home.jpg" width="450" />](https://ecommerce-24a88.web.app/)
+[<img src="https://github.com/soumyajitmohapatra/ecommerce/blob/main/Assest/Product.jpg" alt="product-page" width="455"/>](https://ecommerce-24a88.web.app/men-clothing)
+[<img src="https://github.com/soumyajitmohapatra/ecommerce/blob/main/Assest/Checkout.jpg" alt="Checkout" width="400"/>](https://ecommerce-24a88.web.app/women-clothing)
+[<img src="https://github.com/soumyajitmohapatra/ecommerce/blob/main/Assest/Product-mob.jpg" alt="mobile-view" height="300"/>](https://ecommerce-24a88.web.app/women-clothing)
+[<img src="https://github.com/soumyajitmohapatra/ecommerce/blob/main/Assest/Checkout-mob.jpg" alt="mobile-view" height="300"/>](https://ecommerce-24a88.web.app/bag)
+[<img src="https://github.com/soumyajitmohapatra/ecommerce/blob/main/Assest/Login-mob.jpg" alt="mobile-view" height="300"/>](https://ecommerce-24a88.web.app/login)
 
 
-## Features are coming
 
-1. User verification
-2. Filter Product.
-3. Master product page.
-4. And maybe Payment.... 
+
+## Features available 
+
+- Built Using React, Firebase, Context-api, Styled-Components and [More](https://github.com/soumyajitmohapatra/ecommerce/blob/main/package.json#L5)
+- User Registration and Login authentication.
+- Responsive design.
+- Browse by products category.
+- Cart functionality and more.
+
+
+## Features coming
+
+- Verification of user's Mail-id.
+- Product filter.
+- And maybe Payment gateway.... 
