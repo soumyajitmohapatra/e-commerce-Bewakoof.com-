@@ -23,6 +23,6 @@
 
 ## Features coming
 
-- Verification of user's Mail-id.
+- Verifying user's Mail-id.
 - Product filter.
 - And maybe Payment gateway.... 
