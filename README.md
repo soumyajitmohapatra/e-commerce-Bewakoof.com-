@@ -1,4 +1,4 @@
-![Firebase](https://miro.medium.com/max/300/1*SzrSsS1stZQ7ipYObndbAw.png)
+![Firebase](https://miro.medium.com/max/220/1*SzrSsS1stZQ7ipYObndbAw.png)
 ## [Single Page Application](https://ecommerce-24a88.web.app/), 🚀Built with [React](https://reactjs.org/) and [More](https://github.com/soumyajitmohapatra/ecommerce/blob/main/package.json#L5)
 ###  This is a clone of [Bewakoof.com](bewakoof.com) ♻
 
